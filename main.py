@@ -29,6 +29,7 @@ input.on_button_pressed(Button.B, on_button_pressed_b)
 
 def on_forever():
     global point, interval, interval_step, ball_x, ball_y, ball_dx, ball_dy, bar_x, in_game
+    serial.write_line("Start game")
     point = 0
     interval = 500
     interval_step = 10

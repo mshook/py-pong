@@ -29,6 +29,7 @@ input.onButtonPressed(Button.B, function on_button_pressed_b() {
 })
 basic.forever(function on_forever() {
     
+    serial.writeLine("Start game")
     point = 0
     interval = 500
     interval_step = 10
